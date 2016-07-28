@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: azs-pdp
+  cloud:
+    config:
+      uri: ${vcap.services.test-config-service.credentials.uri:http://localhost:8888}
+

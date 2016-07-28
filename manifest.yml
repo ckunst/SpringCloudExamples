@@ -1,0 +1,9 @@
+applications:
+- name: azs-configserver-client
+  memory: 512M
+  host: azs-config-client
+  instances: 1
+  path: target/test-config-client-0.0.1-SNAPSHOT.jar
+  #buildpack: java-buildpack-strongenc
+  services:
+    - test-config-service
